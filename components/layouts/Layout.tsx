@@ -3,7 +3,6 @@ import Head from "next/head";
 import { Navbar } from '../ui';
 
 interface Props  {
-	children: JSX.Element;
 	title?: string;
 }
 
@@ -16,7 +15,7 @@ export const Layout: FC<Props> = ({ children, title }) => {
 		<>
 			<Head>
 				<title>{ title || 'Pokemon App' }</title>
-				<meta name="author" content="Carlos Murillo"/>
+				<meta name="author" content="Carlos"/>
 				<meta name="description" content={`Información sobre el pokémon ${ title }`}/>
 				<meta name="keywords" content={`${ title }, pokemon, pokedex`}/>
 
